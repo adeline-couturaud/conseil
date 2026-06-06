@@ -8,19 +8,34 @@
 
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const menuIcon = document.querySelector('.menu-icon');
+  const navLinks = document.querySelector('.nav-links');
+  if (menuIcon && navLinks) {
+    menuIcon.addEventListener('click', function() {
+      navLinks.classList.toggle('open');
+    });
+    document.addEventListener('click', function(e) {
+      if (!menuIcon.contains(e.target) && !navLinks.contains(e.target)) {
+        navLinks.classList.remove('open');
+      }
+    });
+  }
+});
+</script>
 <body>
 
 <header>
     <nav>
         <div class="logo">
-            Adeline Couturaud
-            <span>Conseil & Formation</span>
+            <img src="assets/img/logo.png" alt="Adeline Couturaud" style="height:200px;">
         </div>
+
         <div class="nav-links">
             <a href="#accueil">Accueil</a>
             <a href="#formations">Formations</a>
-            <a href="#conseil">Conseil</a>
+            <a href="conseil.html">Conseil</a>
             <a href="#apropos">À propos</a>
             <a href="#contact">Contact</a>
         </div>
@@ -45,7 +60,7 @@
             </div>
 
             <div>
-                <img src="assets/img/photo-accueil.jpg" alt="Adeline Couturaud - formation et conseil">
+                <img src="assets/img/photo-adeline.png" alt="Adeline Couturaud - formation et conseil">
             </div>
         </div>
     </section>
@@ -129,25 +144,38 @@
 
     <section class="soft" id="apropos">
         <div class="container about">
-            <div>
-                <img src="assets/img/photo-adeline.jpg" alt="Portrait Adeline Couturaud">
-            </div>
+
 
             <div>
                 <h2>À propos</h2>
                 <p>
-                    Après 20 ans dans le commerce et le management, j’ai choisi de mettre mon expérience
-                    terrain au service du développement humain en entreprise.
+                    Pendant plus de 20 ans, j'ai évolué dans les domaines du commerce, du management et de la formation professionnelle. J'ai accompagné des équipes, animé des formations, recruté et observé à quel point la posture, la communication et l'image influencent la manière dont nous sommes perçus.
                 </p>
                 <p>
-                    Aujourd’hui, j’interviens comme consultante et formatrice auprès de publics individuels
-                    et collectifs : entreprises, organismes de formation et collectivités.
+                    Avec le temps, une évidence s'est imposée : nous ne transmettons pas uniquement par les mots. Notre présence, notre posture, notre manière de communiquer et de nous présenter racontent déjà quelque chose de nous.
                 </p>
                 <p>
-                    Mon approche : du concret, de l’humain, des mises en situation et des outils directement
-                    réutilisables.
+                    Avant la formation professionnelle, j’ai évolué pendant plus de 15 ans dans l’univers du prêt-à-porter, de la vente à la direction de magasin.
+                </p>
+                <p>
+                    Au fil de ce parcours, j’ai accompagné de nombreuses personnes dans leur image, leur posture et leur manière de se présenter, notamment à travers des missions de conseil personnalisé et de personal shopping.
+                </p>
+                <p>
+                    Formée au conseil en image, j’ai progressivement développé une approche plus globale reliant image, communication et présence professionnelle.
+                </p>
+                <p>
+                    Aujourd'hui, j'accompagne les particuliers et les professionnels à développer une présence plus cohérente, plus affirmée et plus naturelle.
                 </p>
                 <a class="btn" href="#contact">Me contacter</a>
+            </div>
+            <div class="approche">
+                Mon approche associe<br>
+                - Image professionnelle<br>
+                - Communication<br>
+                - Posture relationnelle<br>
+                - Présence à l'oral<br>
+                - Management<br>
+                - Développement humain
             </div>
         </div>
     </section>
