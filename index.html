@@ -8,6 +8,11 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+<script>
+    document.querySelectorAll('.hero-title span').forEach((span, index) => {
+        span.style.setProperty('--span-index', index);
+    });
+</script>
 <body>
 <div class="global-container">
     <header>
@@ -31,7 +36,7 @@
             <div class="hero-inner">
                 <div>
                     <h1 class="hero-title">
-                        <span>Conseil en image 4</span>
+                        <span>Conseil en image</span>
                         <span>Particuliers et entreprises</span>
                     </h1>
                     <h2>Présentiel départements 37 et 41 <br/>
@@ -41,13 +46,15 @@
                     </p>
                     <p>Une approche globale de la présence professionnelle.</p>
                     <h3>Mon approche relie</h3>
-                    <ul>
-                        <li><i class="fas fa-image"></i> Image professionnelle</li>
-                        <li><i class="fas fa-user-tie"></i> Posture</li>
-                        <li><i class="fas fa-comments"></i> Communication interpersonnelle</li>
-                        <li><i class="fas fa-handshake"></i> Présence relationnelle</li>
-                        <li><i class="fas fa-star"></i> Confiance visible</li>
-                    </ul>
+                    <p>
+                        <ul>
+                            <li><i class="fas fa-image"></i> Image professionnelle</li>
+                            <li><i class="fas fa-user-tie"></i> Posture</li>
+                            <li><i class="fas fa-comments"></i> Communication interpersonnelle</li>
+                            <li><i class="fas fa-handshake"></i> Présence relationnelle</li>
+                            <li><i class="fas fa-star"></i> Confiance visible</li>
+                        </ul>
+                    </p>
                     <p>Parce qu'avant même de parler, nous communiquons déjà quelque chose de nous.</p>
                     <a class="btn" href="mailto:adeline.couturaud37@gmail.com?subject=Demande%20de%20contact%20-%20conseil%20en%20image">Parlons de votre besoin</a>
                 </div>
