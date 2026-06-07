@@ -54,6 +54,22 @@ nav {
     nav {
         justify-content: center;
     }
+
+        html {
+            font-size: 14px; /* Réduit la taille de base de la police */
+        }
+
+        h1 {
+            font-size: 1.8rem; /* 1.8 * 14px = ~25px */
+        }
+
+        h2 {
+            font-size: 1.4rem; /* 1.4 * 14px = ~20px */
+        }
+
+        p, a, li {
+            font-size: 0.9rem; /* 0.9 * 14px = ~13px */
+        }
 }
 
 .logo img {
