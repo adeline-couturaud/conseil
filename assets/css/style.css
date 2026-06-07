@@ -91,9 +91,10 @@ nav {
 }
 
 /* Section Hero */
+/* Section Hero */
 .hero {
+    padding: 40px 20px;
     background-color: #fff;
-    padding: 60px 20px;
     margin-bottom: 40px;
 }
 
@@ -105,16 +106,49 @@ nav {
     margin: 0 auto;
 }
 
-.hero-inner > div {
-    flex: 1;
-}
-
 .hero-inner img {
     width: 100%;
     max-width: 500px;
     border-radius: 10px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
 }
+
+/* Responsive pour la section hero */
+@media (max-width: 768px) {
+    .hero-inner {
+        flex-direction: column;
+        gap: 20px;
+        text-align: left; /* Alignement à gauche par défaut */
+    }
+
+    .hero-inner > div {
+        width: 100%;
+    }
+
+    .hero-inner img {
+        max-width: 100%;
+        height: auto;
+        margin: 0 auto; /* Centre l'image horizontalement */
+    }
+
+    /* Force l'alignement à gauche pour le texte */
+    .hero-title {
+        text-align: left;
+    }
+
+    .hero h2, .hero p {
+        text-align: left;
+    }
+
+    .hero .btn {
+        margin-left: 0; /* Supprime les marges inutiles */
+    }
+}
+
+.hero-inner > div {
+    flex: 1;
+}
+
 
 .hero-title {
     font-size: 2.5rem;
