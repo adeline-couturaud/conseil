@@ -10,7 +10,20 @@ body {
     background-color: #F5F5F5;
     color: #333333;
     line-height: 1.6;
-    padding: 0 20px !important;
+}
+
+/* Conteneur global avec padding */
+.global-container {
+    padding: 0 20px;
+    min-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Réinitialise les marges et paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /* Conteneur principal */
