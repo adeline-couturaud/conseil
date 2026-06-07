@@ -369,8 +369,45 @@ footer a:hover {
     text-decoration: underline;
 }
 
+
+/* Style pour la section "VOUS RECONNAISSEZ-VOUS ?" */
+.recognition-list {
+    text-align: left !important; /* Force l'alignement à gauche */
+    padding-left: 0 !important; /* Supprime le padding par défaut des listes */
+    margin: 20px 0 !important; /* Espacement vertical */
+    list-style: none !important; /* Supprime les puces par défaut */
+}
+
+.recognition-list li {
+    display: flex !important; /* Utilise flexbox pour aligner le texte */
+    align-items: flex-start !important; /* Aligne le texte en haut */
+    margin-bottom: 10px !important; /* Espace entre les éléments de liste */
+    text-align: left !important; /* Force l'alignement à gauche */
+    padding: 0 !important; /* Supprime le padding par défaut */
+}
+
+.recognition-list li strong {
+    margin-right: 5px !important; /* Espace après le texte en gras */
+    display: inline !important; /* Assure que le strong reste dans le flux du texte */
+}
+
+/* Style pour le sous-titre */
+.subtitle {
+    text-align: left !important; /* Alignement à gauche */
+    margin-top: 20px !important; /* Espace au-dessus du sous-titre */
+    font-style: italic; /* Optionnel : style italique pour le sous-titre */
+    color: #555 !important; /* Couleur plus claire pour le sous-titre */
+}
+
 /* Responsive */
 @media (max-width: 768px) {
+    .recognition-list,
+    .recognition-list li,
+    .subtitle {
+        text-align: left !important;
+        width: 100% !important;
+    }
+
     .hero-inner {
         flex-direction: column;
         text-align: center;
