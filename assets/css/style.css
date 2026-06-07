@@ -177,11 +177,36 @@ nav {
     display: block;
 }
 
-.hero h2 {
-    font-size: 1.5rem;
-    color: #FFB347;
+section h2 {
+    font-size: 1.8rem;
+    color: #333333;
     margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #FFD700;
+     display: flex; /* Utilise flexbox pour aligner le texte et le logo */
+     align-items: center; /* Centre verticalement le texte et le logo */
+     gap: 10px; /* Espace entre le texte et le logo */
+     flex-wrap: wrap; /* Permet au logo de passer à la ligne si nécessaire */
+ }
+
+/* Style pour le lien LinkedIn dans le titre */
+h2 a {
+    display: inline-flex; /* Permet de centrer le SVG verticalement */
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Supprime le soulignement du lien */
 }
+
+/* Style pour le SVG LinkedIn */
+h2 svg {
+    width: 24px; /* Largeur fixe pour le logo */
+    height: 24px; /* Hauteur fixe pour le logo */
+    vertical-align: middle; /* Alignement vertical (alternative à flexbox) */
+}
+
+
+
+
 
 .hero p {
     margin-bottom: 30px;
@@ -230,14 +255,7 @@ section .container {
     margin-bottom: 40px;
 }
 
-section h2 {
-    font-size: 1.8rem;
-    color: #333333;
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #FFD700;
-    display: inline-block;
-}
+
 
 section h3 {
     font-size: 1.4rem;
@@ -371,6 +389,10 @@ footer a:hover {
 
 
 /* Style pour la section "VOUS RECONNAISSEZ-VOUS ?" */
+.recognition-section {
+    text-align: left !important;
+}
+
 .recognition-list {
     text-align: left !important; /* Force l'alignement à gauche */
     padding-left: 0 !important; /* Supprime le padding par défaut des listes */
@@ -399,6 +421,22 @@ footer a:hover {
     color: #555 !important; /* Couleur plus claire pour le sous-titre */
 }
 
+/* Style pour l'icône LinkedIn dans le menu */
+.linkedin-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem; /* Taille de l'icône */
+    color: #0077B5; /* Couleur officielle LinkedIn */
+    transition: color 0.3s ease; /* Animation au survol */
+    margin-left: 10px; /* Espace entre "À propos" et l'icône */
+}
+
+/* Effet de survol */
+.linkedin-icon:hover {
+    color: #005582; /* Couleur plus foncée au survol */
+}
+
 /* Responsive */
 @media (max-width: 768px) {
     .recognition-list,
@@ -406,6 +444,10 @@ footer a:hover {
     .subtitle {
         text-align: left !important;
         width: 100% !important;
+    }
+
+    .linkedin-icon {
+        display: none; /* Cache l'icône sur mobile */
     }
 
     .hero-inner {
@@ -430,6 +472,9 @@ footer a:hover {
         flex-direction: column;
         gap: 10px;
         text-align: center;
+    }
+    h2 {
+        gap: 8px; /* Réduit légèrement l'espace sur mobile */
     }
 }
 
