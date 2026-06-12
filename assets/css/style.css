@@ -446,6 +446,9 @@ footer a:hover {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .logo img {
+        height: 150px;
+    }
     .recognition-list,
     .recognition-list li,
     .subtitle {
