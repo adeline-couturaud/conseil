@@ -179,7 +179,7 @@ nav {
 
 section h2 {
     font-size: 1.8rem;
-    color: #333333;
+    color: #084037;
     margin-bottom: 20px;
     padding-bottom: 10px;
     border-bottom: 2px solid #FFD700;
@@ -237,6 +237,17 @@ h2 svg {
 /* Sections générales */
 section {
     padding: 40px 0;
+}
+
+section#acompagnements{
+    background-image: url('../img/colorimetrie-sourire.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section#acompagnements .container {
+    background-color: rgba(255, 255, 255, 0.9);
 }
 
 section .container {
