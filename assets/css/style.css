@@ -240,7 +240,7 @@ section {
 }
 
 section#acompagnements{
-    background-image: url('../img/colorimetrie-sourire.jpg');
+    /*background-image: url('../img/colorimetrie-sourire.jpg');*/
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -362,6 +362,10 @@ ul li strong {
 .card h3 {
     color: #333333;
     margin-bottom: 15px;
+}
+
+.text-brand {
+    color: #c71375;
 }
 
 /* Tables */
